@@ -17,6 +17,11 @@ bin/rails db:create
 bin/rails db:migrate
 ```
 
+User model was generated with the following:
+```
+bin/rails generate model user username:string fav_fruits:json
+```
+
 Create some data and try to iterate from a Rails console `bin/rails console`:
 
 ```ruby
