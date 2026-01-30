@@ -24,8 +24,7 @@ user = User.create(username: "alice", fav_fruits: ["apple", "orange"])
 user.fav_fruits.each do |fruit|
   puts fruit
 end
-# (irb):5:in `<main>': undefined method `each' for "[\"apple\", \"orange\"]":String (NoMethodError)
-# user.fav_fruits.each do |fruit|
+# (maria):2:in '<main>': undefined method 'each' for an instance of String (NoMethodError)
 ```
 
 Connect to MariaDB running in Docker container from laptop (enter password from docker-compose.yml when prompted):
